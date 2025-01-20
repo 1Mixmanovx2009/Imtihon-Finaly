@@ -1,3 +1,298 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bgHero {
+  background-image: url('./assets//images/heroBg.png');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-80%);
+  }
+}
+
+.logos-slide {
+  animation: 15s slide infinite linear;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.logos {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1535px) {
+  .Bg_img {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1535px) {
+  .header_input {
+    width: 400px;
+  }
+
+  .Bg_img {
+    display: none;
+  }
+
+  .footerLine {
+    width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1535px) {
+  .star2 {
+    right: 600px;
+
+  }
+
+  .arrval_line {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .header_input {
+    width: 300px;
+  }
+
+  .footerLine {
+    width: 1000px;
+  }
+
+  .star2 {
+    right: 500px;
+
+  }
+}
+
+@media only screen and (max-width: 1241px) {
+  .footerLine {
+    width: 700px;
+  }
+
+  /* .commits {
+    width: 1000px;
+  } */
+  .black_footer {
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1129px) {
+  .bgHero {
+    background-image: none;
+    background-color: #f2f0f1;
+
+    div {
+      div {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    h1 {
+      text-align: center;
+      justify-content: center;
+      margin-inline: auto;
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+
+  .star1 {
+    top: 800px;
+  }
+
+  .star2 {
+    top: 980px;
+    right: 900px;
+  }
+
+  .Bg_img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .bgHero {
+    background-color: #f2f0f1;
+
+    div {
+      flex-direction: column;
+
+      .Bg_img {
+        object-fit: cover;
+      }
+    }
+
+    .star2 {
+      top: 980px;
+      right: 800px;
+    }
+  }
+
+  .columns {
+    gap: 90px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .black_footer {
+    width: 800px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin-inline: auto;
+      margin-bottom: 40px;
+      text-align: center;
+
+    }
+  }
+
+  .star2 {
+    top: 980px;
+    right: 700px;
+  }
+
+  .EndFooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .arrval_line {
+    width: 200px;
+  }
+
+  .commits {
+    justify-content: center;
+  }
+
+  .li {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      margin-bottom: 24.42px;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .columns {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .black_footer {
+    width: 600px;
+
+    p {
+      width: 480px;
+    }
+  }
+
+  .footerLine {
+    width: 500px;
+  }
+
+  .bottomFooter {
+    flex-direction: column;
+  }
+
+  .star2 {
+    top: 980px;
+    right: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .black_footer {
+    width: 500px;
+
+    p {
+      width: 380px;
+    }
+  }
+
+  .header_input {
+    display: none;
+  }
+
+  .number {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .numberCenter {
+    border-right: none;
+  }
+
+  .heroH1 {
+    width: 100%;
+  }
+
+  .heroP {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footerLine {
+    width: 300px;
+  }
+
+  .footer {
+    padding: 17px;
+  }
+
+  .black_footer {
+    width: 350px;
+
+    p {
+      font-size: 30px;
+      width: 220px;
+    }
+  }
+
+  .input_footer {
+    width: 250px;
+  }
+
+  .footer_input {
+    width: 150px;
+  }
+}

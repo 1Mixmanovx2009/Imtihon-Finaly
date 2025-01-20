@@ -1,0 +1,195 @@
+/* Modal fon */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal o'zi */
+.modal {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+/* Forma elementlari */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-input,
+.form-textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #007bff;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Rating */
+.rating-input {
+    margin-top: 8px;
+}
+
+/* Tugmalar */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cancel-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.cancel-button:hover {
+    background-color: #ddd;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* More uchun modal */
+.more-modal {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.delete-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #ff7875;
+}
+
+
+@media only screen and (max-width: 1535px) {
+    .comment_detail {
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 1253px) {
+    .image_wrapper {
+        flex-direction: column;
+
+        .max_img {
+            width: 422px;
+            height: 385px;
+        }
+    }
+
+    .min_img-wrapper {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image_wrapper {
+        justify-content: center;
+    }
+    .max_img {
+        width: 100%;
+        height: 385px;
+    }
+}
+@media only screen and (max-width: 499px) {
+    .min_img-wrapper {
+        gap: 10px;
+        justify-content: space-around;
+        img {
+            width: 102px;
+            height: 107px;
+        }
+    }
+    .lates {
+        display: none;
+    }
+    .max_img {
+        width: 100%;
+        height: 385px;
+    }
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width:1279px) {
+    .cart_wrapper {
+        gap:30px;
+    }
+
+    .checkout {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1223px) {
+    .cart_wrapper {
+        flex-direction: column;
+    }
+    .cart_products{
+        width: 100%;
+    }
+    .price_products{
+        width: 100%;
+    }
+
+    .checkout_wrapper {
+        flex-direction: column;
+    }
+    .info_form {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:502px) {
+    .input_button-wrapper {
+        gap: 20px;
+    }
+    .cart_input {
+        width: 70%;
+        input{
+            width: 140px;
+        }
+    }
+
+    .cart_button {
+        width: 30%;
+    }
+    .plus_minus {
+        width: 120px;
+    }
+}
+
