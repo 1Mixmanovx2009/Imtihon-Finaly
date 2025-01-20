@@ -3,5 +3,6 @@ export interface ProductType {
     name: string;
     price: number;
   }
+  declare module "react-modal";
 
   
