@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import Delete from "../../assets/images/Delete.svg";
 import arrow from "../../assets/images/arrow-down-bold 1.svg";
-import Empte from "../../assets/images/Image.png";
+import Empte from "../../assets/images/image.png";
 import './Cart.css';
 
 interface Product {
