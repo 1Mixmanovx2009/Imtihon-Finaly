@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/SHOP.CO.svg";
-import searchIcon from "../../assets/images/searchcon.svg";
+import searchIcon from "../../assets/images/searchicon.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Select from "../Select/Select";
 import { LuShoppingCart } from "react-icons/lu";
