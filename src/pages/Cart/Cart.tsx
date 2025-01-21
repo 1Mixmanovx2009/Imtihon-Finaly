@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import { FiMinus, FiPlus } from "react-icons/fi";
 import Delete from "../../assets/images/Delete.svg";
-import Frame from "../../assets/images/Frame (7).svg";
 import arrow from "../../assets/images/arrow-down-bold 1.svg";
 import Empte from "../../assets/images/Image.png";
 import './Cart.css';
@@ -19,7 +18,7 @@ interface Product {
 const CartPage: React.FC = () => {
     const [cartItems, setCartItems] = useState<Product[]>([]);
     const [counts, setCounts] = useState<Record<string, number>>({});
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
 
     useEffect(() => {
         const savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
@@ -57,7 +56,6 @@ const CartPage: React.FC = () => {
         <div className="container mx-auto mb-[80px]  mt-[70px]">
             <p className="font-[700] text-[40px] leading-[48px] text-start mb-[24px]">Your Cart</p>
             <div className="cart_wrapper flex justify-between">
-                {/* Cart Items Section */}
                 <div className="w-[715px] cart_products border py-[20px] px-[24px] rounded-[20px]">
                     {cartItems.length > 0 ? (
                         cartItems.map((item) => (
@@ -107,7 +105,6 @@ const CartPage: React.FC = () => {
                     )}
                 </div>
 
-                {/* Summary Section */}
                 <div className="price_products w-[505px] h-[405px] border px-[24px] py-[20px] rounded-[20px]">
                     <p className="font-[700] text-[24px] leading-[32px] text-start">Order Summary</p>
                     <ul className="mt-[24px] flex flex-col gap-[20px] mb-[24px]">

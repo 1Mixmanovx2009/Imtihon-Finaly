@@ -1,4 +1,3 @@
-import React from "react";
 import calvin from "../../assets/images/calvinKlein.svg";
 import gucci from "../../assets/images/gucci.svg";
 import prada from "../../assets/images/prada.svg";

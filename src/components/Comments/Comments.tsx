@@ -32,11 +32,10 @@ const Comments: React.FC = () => {
     const [name, setName] = useState('');
     const [comment, setComment] = useState('');
     const [rating, setRating] = useState(0);
-    const [moreModalIsOpen, setMoreModalIsOpen] = useState(false); // "More" uchun modal
-    const [selectedCommentId, setSelectedCommentId] = useState<string | null>(null); // Tanlangan komment ID-si
+    const [moreModalIsOpen, setMoreModalIsOpen] = useState(false); 
+    const [selectedCommentId, setSelectedCommentId] = useState<string | null>(null);
     const queryClient = useQueryClient();
 
-    // Kommentlarni olish
     const { data: comments, isLoading, error } = useQuery<Comment[]>({
         queryKey: ["comments", id],
         queryFn: async () => {
@@ -45,7 +44,6 @@ const Comments: React.FC = () => {
         },
     });
 
-    // Yangi komment qo'shish
     const addCommentMutation = useMutation({
         mutationFn: (newComment: Omit<Comment, 'id' | 'createdAt'>) => {
             return api.post(`/product/${id}/comments`, newComment);
@@ -55,7 +53,6 @@ const Comments: React.FC = () => {
         },
     });
 
-    // Kommentni o'chirish
     const deleteCommentMutation = useMutation({
         mutationFn: (commentId: string) => {
             return api.delete(`/product/${id}/comments/${commentId}`);
@@ -65,7 +62,6 @@ const Comments: React.FC = () => {
         },
     });
 
-    // Yangi komment qo'shish formasi
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const newComment = {
@@ -82,17 +78,15 @@ const Comments: React.FC = () => {
         setRating(0);
     };
 
-    // "More" tugmasi bosilganda
     const handleMoreClick = (commentId: string) => {
-        setSelectedCommentId(commentId); // Tanlangan komment ID-sini saqlash
-        setMoreModalIsOpen(true); // Modalni ochish
+        setSelectedCommentId(commentId); 
+        setMoreModalIsOpen(true); 
     };
 
-    // Kommentni o'chirish
     const handleDeleteComment = () => {
         if (selectedCommentId) {
-            deleteCommentMutation.mutate(selectedCommentId); // Kommentni o'chirish
-            setMoreModalIsOpen(false); // Modalni yopish
+            deleteCommentMutation.mutate(selectedCommentId); 
+            setMoreModalIsOpen(false); 
         }
     };
 
