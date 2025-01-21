@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/SHOP.CO.svg";
-// import searchIcon from "../../assets/images/searchicon.svg";
+import searchIcon from "../../assets/images/searchicon.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Select from "../Select/Select";
 import { LuShoppingCart } from "react-icons/lu";
@@ -71,7 +71,7 @@ const BottomHeader = () => {
                   </Link>
                 </li>
                 <div className='header_input max-w-[577px] bg-[#f0f0f0] px-[52px] py-[14px] rounded-[62px] relative'>
-                  {/* <img className='absolute left-[20px]' src={searchIcon} alt="" /> */}
+                  <img className='absolute left-[20px]' src={searchIcon} alt="" />
                   <input className='max-w-[151px] bg-[#f0f0f0] placeholder:text-[#00000066] focus:outline-none text-[#00000066]' placeholder='Search for products...' type="text" />
                 </div>
               </ul>
