@@ -1,4 +1,5 @@
 import { Select } from "antd";
+import React from "react";
 
 const SelectComponent = () => {
     const { Option } = Select;

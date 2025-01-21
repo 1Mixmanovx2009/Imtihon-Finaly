@@ -8,11 +8,11 @@ import Commits from '../../components/Commits/Commits'
 function Home() {
   return (
     <div>
-        <Hero/>
-        <ProductListArrive/>
-        <ProductListSelling/>
-        <Dress/>
-        <Commits/>
+      <Hero />
+      <ProductListArrive />
+      <ProductListSelling />
+      <Dress />
+      <Commits />
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import React from 'react'
 import Details from '../../components/detail/Detail'
 
 function Detail() {

@@ -1,5 +1,6 @@
+import React from 'react'
 import './App.css'
-import PagesRouter from './router/index';
+import PagesRouter from './router/index'
 
 function App() {
 
