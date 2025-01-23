@@ -1,4 +1,3 @@
-// src/store/productsSlice.ts
 import { createSlice } from '@reduxjs/toolkit';
 import { fetchProducts } from './productThunks';
 
